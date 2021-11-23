@@ -1,0 +1,76 @@
+<html>
+  <head>
+    <style type="text/css">
+<!--
+/* 親要素 Flexコンテナ */
+.container {
+  background-color: aquamarine;
+  margin: 10px;
+  padding: 10px;
+  width: 320px;
+  height: 240px;
+
+  display: inline-flex; /* インライン要素に */
+  display: flex;        /* Flexbox 化 */
+
+  flex-direction: row;            /* → へ */
+  flex-direction: row-reverse;    /* ← へ */
+  flex-direction: column;         /* ↓ へ */
+  flex-direction: column-reverse; /* ↑ へ */
+
+  flex-wrap: nowrap;        /* はみ出す場合も、折り返さない */
+  flex-wrap: wrap;          /* はみ出す場合は、上から下へ折り返す */
+  flex-wrap: wrap-reverse;  /* はみ出す場合は、下から上へ折り返す */
+
+  flex-flow: column wrap;   /* flex-direction と flex-wrap を一行で指定 */
+
+  justify-content: flex-start;    /* 左揃え */
+  justify-content: flex-end;      /* 右揃え */
+  justify-content: center;        /* 中央揃え */
+  justify-content: space-between; /* 均等間隔、両端間隔なし */
+  justify-content: space-around;  /* 均等間隔、両端間隔半分 */
+  justify-content: space-evenly;  /* 均等間隔、両端等間隔 */
+
+  align-items: stretch;     /* 初期値 */
+  align-items: flex-start;  /* 上揃え */
+  align-items: flex-end;    /* 下揃え */
+  align-items: baseline;    /* ベースライン（下端）揃え */
+  align-items: center;      /* 中央揃え */
+
+  align-content: stretch;       /* 初期値 */
+  align-content: flex-start;    /* 複数行上揃え */
+  align-content: flex-end;      /* 複数行下揃え */
+  align-content: center;        /* 複数行中央揃え */
+  align-content: space-between; /* 複数行均等間隔、両端間隔なし */
+  align-content: space-around;  /* 均等間隔、両端間隔半分 */
+}
+
+/* 子要素 Flexアイテム */
+.item {
+  background-color: darkgray;
+  margin: 5px;
+  padding: 5px;
+
+  /* WIP */
+
+}
+-->
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="item"> Item 1 </div>
+      <div class="item"> Item 2 </div>
+      <div class="item"> Item 3 </div>
+      <div class="item"> Item 4 </div>
+      <div class="item"> Item 5 </div>
+      <div class="item"> Item 6 </div>
+      <div class="item"> Item 7 </div>
+      <div class="item"> Item 8 </div>
+    </div>
+    <div>
+      参考 - https://www.webcreatorbox.com/tech/css-flexbox-cheat-sheet <br/>
+    </div>
+  </body>
+</html>
